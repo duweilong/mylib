@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>88旅行</title>
+		<meta name="author" content="su-fun@ue">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="renderer" content="webkit">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="320">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+		<META HTTP-EQUIV="expires" CONTENT="Wed, 14 Nov 1981 00:00:00 GMT">
+		<link rel="icon" href="images/ico/favo.ico" type="image/x-icon" />
+    	<link rel="shortcut icon" href="images/ico/favo.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/start.css" />
+		<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+		<script>
+			
+		</script>
+	</head>
+	<body style='position:relative'>
+		<div class="weclome">
+			<img src="images/start/welcome_1.jpg" style='display: none;' onclick="_hmt.push(['_trackEvent','闪屏页','闪屏页banner_点击','闪屏页banner_banner1',whole_price]);">                   
+		</div>
+		<!--<a href="tel://4001385566" class='telephone' style='display: none;'></a>-->
+		<script type="text/javascript">	
+		
+		var c1=3;
+		
+		function timeOut1(){
+			if(c1==0){
+				window.location.href='https://www.yirendai.com/LandingPage/wap/ty/?siteId=2510&source=1'
+				return false;
+			}
+			$('.skip').find('.time_out').text(c1);
+			c1=c1-1;
+			var t_1=setTimeout('timeOut1()',1000)
+		}	
+		function get_setTime_cont(){
+			var  time_content='<div class="skip"><span class="time_out">'+3+'</span ><span class="time_se">s</span></div>';
+			$('.weclome').after(time_content);
+		}
+		
+		function  adDisapper(){
+			var t1=setTimeout(function(){
+				get_setTime_cont();
+				timeOut1();  //倒计时1
+			},0);
+		}
+		
+		window.onload=function(){
+			$('.weclome img').eq(0).fadeIn('fast',adDisapper);
+		}
+		
+		</script>
+	</body>
+</html>
